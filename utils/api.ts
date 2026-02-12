@@ -15,7 +15,7 @@ export const TIKZ_PACKAGES = [
   "tkz-euclide"
 ];
 
-const RENDER_API_URL = 'https://tikz-render-2026.onrender.com/compile';
+const RENDER_API_URL = 'https://compile-tikz-code.onrender.com/compile';
 
 export const extractTikzCode = (fullText: string): string | null => {
   console.log('🔍 [extractTikzCode] Đang trích xuất...');
