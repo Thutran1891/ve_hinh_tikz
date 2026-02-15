@@ -12,7 +12,15 @@ export const TIKZ_PACKAGES = [
   "shapes.geometric",
   "positioning",
   "tkz-tab",
-  "tkz-euclide"
+  "tkz-euclide",
+  "tikz-3dplot",
+  "tkz-linknodes",
+  "graphicx",
+  "tabvar",
+  "wasysym",
+  "fancyhdr",
+  "fillbetween",
+  "compat=1.9",
 ];
 
 const RENDER_API_URL = 'https://compile-tikz-code.onrender.com/compile';
