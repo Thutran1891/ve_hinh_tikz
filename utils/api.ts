@@ -62,8 +62,15 @@ export const compileTikzToImage = async (source: string): Promise<CompileResult>
     format: 'png',
     density: 300,
     transparent: true,
-    return_log: true  // Giữ để debug
-    // ⚠️ BỎ packages: TIKZ_PACKAGES
+    return_log: true,  
+    preamble: `
+\\usepackage{tikz}
+\\usepackage{tkz-euclide}
+\\usepackage{tikz-3dplot}
+\\usepackage{pgfplots}
+\\pgfplotsset{compat=1.9}
+\\usetikzlibrary{patterns,arrows.meta,calc,positioning,shapes.geometric}
+`
   };
   
   console.log('📤 [compileTikzToImage] Request:', JSON.stringify(requestBody, null, 2));
